@@ -12,52 +12,52 @@ Currently supported Linux Distro:
 ## Usage
 
 __Usage:__
-└──╼ $ ./autoinstall.sh [-h|-v|-d|-V|-i [file]] <configuration file>
+└──╼ $ ./autoinstall.sh [-h|-v|-d|-V|-i [file]] configuration file
 
 __OPTIONs:__
 
--i       file: import data according to file.
--d       Dry run. Echoes commands, no actual modification done.
--v       Verbose mode.
--h       Print help message.
--V       Print version.
+* -i     file: import data according to file.
+* -d     Dry run. Echoes commands, no actual modification done.
+* -v       Verbose mode.
+* -h       Print help message.
+* -V       Print version.
 
 
 ### Configuration file example:
 ---- configuration.conf ----
 ##
-\# This is the configuration file for ./autoinstall.sh script, use it to
-\# configure: Packages to be installed and services to be enabled.
-\# Each line format has to be:
-\# NAME;space seprated values
-\# TEST;qupzilla midori
-\#
-\# Use the key word SERVICE to identify services to be started.
-\# SERVICE;nfs-kernel-server
-\##
-
-\## REMOVE ##
-CLEANING;gbd
-
-\## PACKAGES to be installed
-SYSTEM;acpi alsa-plugin alsa-utils cmake gcc ifuse intel-ucode lightdm network-manager-applet wget xorg xfce4
-WEB;openssh thunderbird firefox nfs-utils
-EXTRA;mousepad libreoffice gcalculator xarchiver evince
-ADVANCED;vim jre8-openjdk-headless lightdm-webkit2-greeter audacity virtualbox
-MEDIA;clementine vlc youtube-dl kodi gst-plugins-good gst-plugins-ugly qt-gstreamer gst-plugins-bad
-
-\## SERVICES
-SERVICE;NetworkManager lightdm
+#This is the configuration file for ./autoinstall.sh script, use it to<br>
+#configure: Packages to be installed and services to be enabled.<br>
+#Each line format has to be:<br>
+#NAME;space seprated values<br>
+#TEST;qupzilla midori<br>
+#<br>
+#Use the key word SERVICE to identify services to be started.<br>
+#SERVICE;nfs-kernel-server<br>
+##<br>
+<br>
+\## REMOVE ##<br>
+CLEANING;gbd<br>
+<br>
+\## PACKAGES to be installed<br>
+SYSTEM;acpi alsa-plugin alsa-utils cmake gcc ifuse intel-ucode lightdm network-manager-applet wget xorg xfce4<br>
+WEB;openssh thunderbird firefox nfs-utils<br>
+EXTRA;mousepad libreoffice gcalculator xarchiver evince<br>
+ADVANCED;vim jre8-openjdk-headless lightdm-webkit2-greeter audacity virtualbox<br>
+MEDIA;clementine vlc youtube-dl kodi gst-plugins-good gst-plugins-ugly qt-gstreamer gst-plugins-bad<br>
+<br>
+\## SERVICES<br>
+SERVICE;NetworkManager lightdm<br>
 
 This is an example of file parsed with the -i option:
 
- ---- sys_cfg.txt---- 
-    # This is a comment
-    .vimrc;/home/tt/
-    .bash_aliases;/home/tt/
-    #This is a comment
+ ---- sys_cfg.txt---- <br>
+    # This is a comment<br>
+    .vimrc;/home/tt/<br>
+    .bash_aliases;/home/tt/<br>
+    #This is a comment<br>
 
-----
+----<br>
 Before finishing the script will search for .vimrc file and copy it into /home/tt.
 
 
