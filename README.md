@@ -2,7 +2,7 @@
 
 This script can be used to install/remove packages, enable services and copy
 files on your system typically to quickly set it up after an OS installation
-or to bulk customize your system.
+or to bulk customize it.
 
 Currently supported Linux Distro:
 * Arch Linux
