@@ -68,7 +68,7 @@ Configuration file example:
 ##
 
 ## REMOVE ##
-CLEANING;gbd
+REMOVE;gbd
 
 ## PACKAGES to be installed
 SYSTEM;acpi alsa-plugin alsa-utils cmake gcc ifuse intel-ucode lightdm network-manager-applet wget xorg xfce4
