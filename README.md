@@ -37,7 +37,7 @@ __OPTIONs:__
 ##<br>
 <br>
 \## REMOVE ##<br>
-CLEANING;gbd<br>
+REMOVE;gbd<br>
 <br>
 \## PACKAGES to be installed<br>
 SYSTEM;acpi alsa-plugin alsa-utils cmake gcc ifuse intel-ucode lightdm network-manager-applet wget xorg xfce4<br>
