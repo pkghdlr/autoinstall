@@ -1,0 +1,5 @@
+# This is a comment
+.vimrc;/home/tt/
+.bash_aliases;/home/tt/
+bk.sh;/home/tt/Documents/
+#This is a comment
